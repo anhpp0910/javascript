@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS BAI 4 PLUS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- VD1 -->
+      <div class="container my-5">
+        <h4>VD1: Tính tiền phạt thẻ tín dụng</h4>
+        <div class="form-group">
+          <p>Nhập vào số dư</p>
+          <input type="number" class="form-control w-25" id="soDuThe" />
+        </div>
+        <div class="form-group mt-3">
+          <p>Nhập vào số tiền thanh toán</p>
+          <input type="number" class="form-control w-25" id="tienThanhToan" />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success my-3" id="btnVd1">
+            Tính tiền phạt
+          </button>
+          <p class="alert alert-success w-25" id="ketQuaVd1">
+            Tiền phạt tháng này là:
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <!-- VD2 -->
+      <div class="container my-5">
+        <h4>VD2: Tính tiền lương</h4>
+        <div class="form-group">
+          <p>Nhập vào số giờ làm</p>
+          <input type="number" class="form-control w-25" id="soGioLam" />
+        </div>
+        <div class="form-group mt-3">
+          <p>Nhập vào tiền lương 1 giờ</p>
+          <input type="number" class="form-control w-25" id="tienLuong1Gio" />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success my-3" id="btnVd2">Tính lương</button>
+          <p class="alert alert-success w-25" id="ketQuaVd2">
+            Tiền lương tuần này của bạn là:
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <!-- VD3 -->
+      <div class="container my-5">
+        <h4>VD3: Tính tiền hàng</h4>
+        <div class="form-group">
+          <p>Nhập vào số lượng mua</p>
+          <input type="number" class="form-control w-25" id="soLuong" />
+        </div>
+        <div class="form-group mt-3">
+          <p>Nhập vào đơn giá</p>
+          <input type="number" class="form-control w-25" id="donGia" />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success my-3" id="btnVd3">
+            Tính tiền hàng
+          </button>
+          <p class="alert alert-success w-25" id="ketQuaVd3">
+            Tiền hàng của bạn là:
+          </p>
+        </div>
+      </div>
+      <hr />
+
+      <!-- VD4 -->
+      <div class="container my-5">
+        <h4>VD4: Xếp loại sinh viên</h4>
+        <div class="form-group">
+          <p>Tên sinh viên</p>
+          <input type="text" class="form-control w-25" id="ten" />
+        </div>
+        <div class="form-group my-3">
+          <p>Nhập vào điểm toán</p>
+          <input type="number" class="form-control w-25" id="diemToan" />
+        </div>
+        <div class="form-group my-3">
+          <p>Nhập vào điểm lý</p>
+          <input type="number" class="form-control w-25" id="diemLy" />
+        </div>
+        <div class="form-group mt-3">
+          <p>Nhập vào điểm hoá</p>
+          <input type="number" class="form-control w-25" id="diemHoa" />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success my-3" id="btnVd4">Xếp loại</button>
+          <p class="alert alert-success w-25" id="ketQuaVd4"></p>
+        </div>
+      </div>
+      <hr />
+
+      <!-- VD5 -->
+      <div class="container my-5">
+        <h4>VD5: Xét tháng hợp lệ</h4>
+        <div class="form-group">
+          <p>Nhập vào 1 tháng</p>
+          <input type="number" class="form-control w-25" id="month" />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-success my-3" id="btnVd5">Xem xét</button>
+          <p class="alert alert-success w-25" id="ketQuaVd5"></p>
+        </div>
+      </div>
+      <hr />
+
+      <!-- CONTAINER -->
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index-bai4plus.js"></script>
+  </body>
+</html>

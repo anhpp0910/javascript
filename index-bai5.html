@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS BAI 5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="container" style="margin-bottom: 500px">
+      <!-- VD1 -->
+      <div class="container">
+        <h3>VD1: Viết hàm xuất thông tin lên giao diện</h3>
+        <p id="pThongTin" class="alert alert-success"></p>
+        <section id="sThongTin" class="alert alert-danger mt-2"></section>
+        <article id="aThongTin" class="alert alert-warning mt-2"></article>
+      </div>
+      <hr />
+
+      <!-- VD2 -->
+      <div class="container">
+        <h4>VD2: Viết chương trình tính điểm 2 khối thi đại học A, C</h4>
+        <div class="row mt-5">
+          <div class="col-4">
+            <span class="alert alert-danger">Khối A</span>
+            <div class="input-group mt-5">
+              <div class="input-group-prepend">
+                <button class="btn btn-outline-danger">Điểm toán</button>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="diemToan"
+                placeholder="Nhập vào điểm toán"
+              />
+            </div>
+            <div class="input-group mt-5">
+              <div class="input-group-">
+                <button class="btn btn-outline-danger">Điểm lý</button>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="diemLy"
+                placeholder="Nhập vào điểm lý"
+              />
+            </div>
+            <div class="input-group mt-5">
+              <div class="input-group-">
+                <button class="btn btn-outline-danger">Điểm hoá</button>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="diemHoa"
+                placeholder="Nhập vào điểm hoá"
+              />
+            </div>
+            <div class="input-group mt-5">
+              <div class="input-group-pre">
+                <button class="btn btn-outline-danger">Điểm trung bình</button>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="diemTBKA"
+                readonly
+              />
+            </div>
+            <div class="offset-4 col-4"></div>
+          </div>
+
+          <div class="offset-4 col-4">
+            <span class="alert alert-success">Khối C</span>
+            <div class="input-group mt-5">
+              <div class="input-group-prepend">
+                <button class="btn btn-outline-success">Điểm văn</button>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="diemVan"
+                placeholder="Nhập vào điểm văn"
+              />
+            </div>
+            <div class="input-group mt-5">
+              <div class="input-group-">
+                <button class="btn btn-outline-success">Điểm sử</button>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="diemSu"
+                placeholder="Nhập vào điểm sử"
+              />
+            </div>
+            <div class="input-group mt-5">
+              <div class="input-group-">
+                <button class="btn btn-outline-success">Điểm địa</button>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="diemDia"
+                placeholder="Nhập vào điểm địa"
+              />
+            </div>
+            <div class="input-group mt-5">
+              <div class="input-group-pre">
+                <button class="btn btn-outline-success">Điểm trung bình</button>
+              </div>
+              <input
+                type="number"
+                class="form-control"
+                id="diemTBKC"
+                readonly
+              />
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-2">
+          <button class="btn btn-warning" id="btnTinhDiem">Tính điểm</button>
+        </div>
+      </div>
+      <hr />
+
+      <!-- VD3 -->
+      <div class="container my-5">
+        <h4>VD3: Xây dựng chức năng zoomin zoomout cho 2 button bên dưới</h4>
+        <div>
+          <i
+            class="fa fa-home"
+            aria-hidden="true"
+            id="home"
+            style="font-size: 250px"
+          ></i>
+          <button class="btn btn-outline-success" id="btnZoomInHome">+</button>
+          <button class="btn btn-outline-success" id="btnZoomOutHome">-</button>
+        </div>
+      </div>
+      <hr />
+
+      <!-- VD4 -->
+      <div class="container my-5">
+        <h4>VD4: Xây dựng chức năng zoomin zoomout cho đoạn text bên dưới</h4>
+        <div>
+          <p id="txtContent" style="font-size: 15px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis praesentium blanditiis pariatur nemo numquam, dicta
+            repellat officia deleniti iusto voluptatibus distinctio quo earum
+            amet assumenda harum nesciunt, nobis ipsam repudiandae!
+          </p>
+          <button class="btn btn-outline-success" id="btnZoomInText">+</button>
+          <button class="btn btn-outline-success" id="btnZoomOutText">-</button>
+        </div>
+      </div>
+
+      <!-- CONTAINTER -->
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/common/method-bai5.js"></script>
+    <script src="./js/index-bai5.js"></script>
+  </body>
+</html>
